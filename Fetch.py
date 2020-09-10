@@ -14,7 +14,7 @@ class Fetcher:
             async with session.delete(url) as resp:
                 return await resp.text()
 
-    async def post(url,param):
+    async def post(url, param):
         async with aiohttp.ClientSession() as session:
-            async with session.post(url,param) as resp:
+            async with session.post(url, json=param) as resp:
                 return await resp.text()
