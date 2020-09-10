@@ -9,13 +9,13 @@ async def fetch_url():
     start = time.time()
     print(f"started at {time.strftime('%X')}")
 
-    keanu = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/6384/tv_credits?api_key=ccf0985bab358ff38955fce7695ea467&language=en-US'))
+    keanu = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/6384/tv_credits?api_key=8cac5fb4aefe1209a2da18602509bce4&language=en-US'))
     make_file(keanu,"get_moviedb_001.json")
     print(f"Keanu Success at {time.strftime('%X')}")
-    robert = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/3223/tv_credits?api_key=ccf0985bab358ff38955fce7695ea467&language=en-US'))
+    robert = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/3223/tv_credits?api_key=8cac5fb4aefe1209a2da18602509bce4&language=en-US'))
     make_file(robert,"get_moviedb_002.json")
     print(f"Robert Success at {time.strftime('%X')}")
-    tom = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/1136406/tv_credits?api_key=ccf0985bab358ff38955fce7695ea467&language=en-US'))
+    tom = json.loads(await fetcher.get('https://api.themoviedb.org/3/person/1136406/tv_credits?api_key=8cac5fb4aefe1209a2da18602509bce4&language=en-US'))
     make_file(tom,"get_moviedb_003.json")
     print(f"Tom Success {time.strftime('%X')}")
     
